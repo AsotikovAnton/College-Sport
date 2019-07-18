@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+body {
+	min-width: 320px;
+}
+
 @font-face {
 	font-family: OpenSans-Bold;
 	src: url(../fonts/OpenSans-Bold.woff) format("woff"),
@@ -58,6 +62,11 @@
 	height: 35px;
 	margin-left: auto;
 	margin-right: auto;
+	cursor: pointer;
+}
+
+.header-logo-link {
+	display: block;
 }
 
 .header-logo-svg {
@@ -71,31 +80,20 @@
 	margin-top: 130px;
 }
 
-.heading-start, .heading-end {
-	display: block;
-}
-
-.heading-start {
-	text-align: left;
-	margin-bottom: 20px;
-}
-
 .heading-end {
+	display: block;
 	margin-left: 44px;
 }
 
 .header-links {
 	font-size: 8px;
-	margin-top: 90px;
+	padding-top: 85px;
 	padding-bottom: 85px;
 }
 
 .header-app-store, .header-google-play {
 	height: 35px;
 	background-color: #5e42b0;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
 	border-radius: 17px;
 	cursor: pointer;
 }
@@ -104,8 +102,14 @@
 	margin-bottom: 14px;
 }
 
+.header-button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
 .app-store-logo, .google-play-logo {
-	margin-left: 28.5%;
 	margin-right: 5px;
 }
 
@@ -133,11 +137,7 @@
 }
 
 .athlets {
-	display: flex;
-	flex-wrap: wrap;
-	background-image: url(../images/footballer_192.png);
-    background-repeat: no-repeat;
-    background-position: center 70px;
+	padding-top: 5px;
 }
 
 .main-heading {
@@ -145,17 +145,27 @@
 	font-size: 50px;
 	color: #e7e7e7;
 	text-transform: uppercase;
-	margin-bottom: 310px;
 	padding-left: 20px;
 }
 
+.footballer-img {
+	display: block;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 20px; 
+}
+
 .connection {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
 	padding-bottom: 50px;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+.title-container {
+	display: flex;
+	align-items: center;
 }
 
 .heading-number {
@@ -188,9 +198,6 @@
 
 .collaboration, .growth {
 	padding: 50px 20px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
 }
 
 .collaboration {
@@ -224,11 +231,16 @@
 }
 
 .players {
-	display: flex;
-	flex-wrap: wrap;
-	background-image: url(../images/basketballer_302.png);
-    background-repeat: no-repeat;
-    background-position: center 70px;
+	padding-top: 5px;
+}
+
+.basketballer-img {
+	display: block;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 50px;
 }
 
 .growth-players {
@@ -253,4 +265,59 @@
 	height: 4px;
 	background-color: #ffffff;
 	border-radius: 2px;
+}
+
+.others-img {
+	display: block;
+	width: 100%;
+}
+
+.others-container {
+	position: relative;
+	padding-top: 24px;
+	padding-bottom: 50px;
+}
+
+.number-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	background-color: #5e42b0;
+	position: absolute;
+	top: -58px;
+	left: 20px;
+}
+
+.others-heading-number {
+	font-family: OpenSans-Bold, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.others-heading-number::after {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 4px;
+	background-color: #8f7bc8;
+	border-radius: 2px;
+}
+
+.others-heading {
+	font-family: OpenSans-Bold, sans-serif;
+	font-size: 28px;
+	color: #e7e7e7;
+	text-transform: uppercase;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.others-content-text {
+	font-family: OpenSans-Regular, sans-serif;
+	font-size: 16px;
+	margin-top: 17px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
