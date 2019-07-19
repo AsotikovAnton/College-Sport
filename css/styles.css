@@ -55,9 +55,11 @@ body {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 32px;
+	display: flex;
+    flex-direction: column;
 }
 
-.header-logo {
+.main-logo {
 	width: 130px;
 	height: 35px;
 	margin-left: auto;
@@ -65,11 +67,11 @@ body {
 	cursor: pointer;
 }
 
-.header-logo-link {
+.main-logo-link {
 	display: block;
 }
 
-.header-logo-svg {
+.main-logo-svg {
 	fill: #ffffff;
 }
 
@@ -85,28 +87,31 @@ body {
 	margin-left: 44px;
 }
 
-.header-links {
+.header-social-links {
+	width: 280px;
+	align-self: center;
 	font-size: 8px;
 	padding-top: 85px;
 	padding-bottom: 85px;
 }
 
-.header-app-store, .header-google-play {
+.app-store-link, .google-play-link {
 	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #5e42b0;
 	border-radius: 17px;
 	cursor: pointer;
 }
 
-.header-app-store {
+.app-store-link {
 	margin-bottom: 14px;
 }
 
-.header-button-container {
+.button-container {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
+	width: 40%;
 }
 
 .app-store-logo, .google-play-logo {
@@ -245,9 +250,6 @@ body {
 
 .growth-players {
 	padding: 50px 20px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
 	background: #090c35;
 }
 
@@ -320,4 +322,77 @@ body {
 	margin-top: 17px;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+.footer {
+	color: #ffffff;
+	background-image: url(../images/game_767.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0a0e34;
+    position: relative;
+}
+
+.footer::after {
+	content: "";
+	background-color: #0a0e34;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.9;
+}
+
+.footer-container {
+	position: relative;
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-icon {
+	width: 70px;
+	height: 70px;
+	background-color: #7151cf;
+	border-radius: 14px;
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-icon-svg {
+	width: 60px;
+	height: 50px;
+	fill: #ffffff;
+}
+
+.footer-heading {
+	font-family: OpenSans-Bold, sans-serif;
+	font-size: 32px;
+	text-transform: uppercase;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.footer-heading-end {
+	display: block;
+	font-family: OpenSans-Regular, sans-serif;
+	font-size: 14px;
+	color: #9b8ec1;
+}
+
+.footer-social-links {
+	width: 280px;
+	align-self: center;
+	font-size: 8px;
+	padding-top: 75px;
+	padding-bottom: 80px;
 }
