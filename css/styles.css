@@ -61,15 +61,12 @@ body {
 }
 
 .main-logo {
+	display: block;
 	width: 130px;
 	height: 35px;
 	margin-left: auto;
 	margin-right: auto;
 	cursor: pointer;
-}
-
-.main-logo-link {
-	display: block;
 }
 
 .main-logo-svg {
@@ -113,6 +110,7 @@ body {
 
 .button-container {
 	display: flex;
+	align-items: center;
 	width: 40%;
 }
 
@@ -305,6 +303,7 @@ body {
 }
 
 .others-heading-number {
+	display: block;
 	font-family: OpenSans-Bold, sans-serif;
 	font-size: 14px;
 	color: #ffffff;
@@ -410,7 +409,7 @@ body {
 	margin-bottom: 80px;
 }
 
-/*_______________Для планшета_______________*/
+/*____________________Для планшета____________________*/
 
 @media screen and (min-width: 641px) and (max-width: 960px) {
 	.header-container {
@@ -464,7 +463,6 @@ body {
 	.app-store-logo-svg, .google-play-logo-svg {
 		width: 45px;
 		height: 45px;
-		fill: #ffffff;
 	}
 
 	.athlets {
@@ -513,16 +511,16 @@ body {
 		position: relative;
 	}
 
+	.heading-players {
+		font-size: 80px;
+		padding-left: 32px;
+	}
+
 	.basketballer-img {
 		width: 55%;
 		position: absolute;
 		right: 0;
 		top: 55px;
-	}
-
-	.heading-players {
-		font-size: 80px;
-		padding-left: 32px;
 	}
 
 	.connection-players, .collaboration-players, .growth-players {
@@ -605,5 +603,174 @@ body {
 		flex-direction: row;
 		font-size: 14px;
 		margin-bottom: 55px;
+	}
+}
+
+/*____________________Для декстопа____________________*/
+
+@media screen and (min-width: 961px) {
+	.header {
+		background-image: url(../images/football_1280.jpg);
+	}
+
+	.header-container {
+		padding: 45px 0 110px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.main-logo {
+		width: 190px;
+		height: 55px;
+	}
+
+	.heading {
+		font-size: 70px;
+		margin-top: 275px;
+		margin-bottom: 210px;
+	}
+
+	.heading-end {
+		margin-left: 27%;
+		margin-top: -25px;
+	}
+
+	.header-social-links {
+		flex-direction: row;
+		font-size: 14px;
+	}
+
+	.app-store-link, .google-play-link {
+		width: 310px;
+		height: 77px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 40px;
+	}
+
+	.app-store-link {
+		margin-right: 7%;
+		margin-bottom: 0;
+	}
+
+	.button-container {
+		display: flex;
+		width: 80%;
+	}
+
+	.app-store-logo, .google-play-logo {
+		margin-right: 20px;
+	}
+
+	.app-store-logo-svg, .google-play-logo-svg {
+		width: 45px;
+		height: 45px;
+	}
+
+	.athlets {
+		padding-top: 20px;
+		position: relative;
+	}
+
+	.heading-athlets {
+		font-size: 80px;
+		padding-left: 52%;
+		margin-top: 70px;
+	}
+
+	.footballer-img {
+		width: 40%;
+		min-width: 400px;
+		max-width: 566px;
+		position: absolute;
+		left: 10%;
+		top: 20px;
+	}
+
+	.connection-athlets, .collaboration-athlets, .growth {
+		padding-top: 55px;
+		padding-bottom: 55px;
+		padding-left: 52%;
+		padding-right: 10%;
+	}
+
+	.heading-number, .growth-heading-number {
+		font-size: 18px;
+	}
+
+	.heading-number::after, .growth-heading-number::after {
+		width: 20px;
+		height: 5px;
+		border-radius: 3px;
+	}
+
+	.content-title {
+		font-size: 36px;
+	}
+
+	.content-text, .growth-content-text {
+		font-size: 20px;
+	}
+
+	.players {
+		padding-top: 20px;
+		position: relative;
+	}
+
+	.heading-players {
+		font-size: 80px;
+		padding-left: 10%;
+		margin-top: 70px;
+	}
+
+	.basketballer-img {
+		width: 65%;
+		max-width: 991px;
+		position: absolute;
+		right: -10%;
+		top: 20px;
+	}
+
+	.connection-players, .collaboration-players, .growth-players {
+		padding-top: 55px;
+		padding-bottom: 55px;
+		padding-left: 10%;
+		padding-right: 49%;
+	}
+
+	.growth-heading-number-players {
+		font-size: 18px;
+	}
+
+	.growth-heading-number-players::after {
+		width: 20px;
+		height: 5px;
+		border-radius: 3px;
+	}
+
+@media screen and (min-width: 1661px) {
+	.header {
+		background-image: url(../images/football_1920.jpg);
+	}
+
+	.heading {
+		font-size: 90px;
+	}
+
+	.footballer-img {
+		width: 30%;
+		max-width: 566px;
+		position: absolute;
+		left: 20%;
+		top: 20px;
+	}
+
+	.basketballer-img {
+		width: 50%;
+		max-width: 991px;
+		position: absolute;
+		right: 5%;
+		top: 20px;
 	}
 }
