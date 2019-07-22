@@ -290,7 +290,7 @@ body {
 	padding-bottom: 50px;
 }
 
-.number-container {
+.be-active-number-container, .find-contacts-number-container, .work-it-number-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -725,10 +725,10 @@ body {
 	}
 
 	.basketballer-img {
-		width: 65%;
+		width: 62.5%;
 		max-width: 991px;
 		position: absolute;
-		right: -10%;
+		right: 0;
 		top: 20px;
 	}
 
@@ -747,6 +747,75 @@ body {
 		width: 20px;
 		height: 5px;
 		border-radius: 3px;
+	}
+
+	.be-active, .find-contacts, .work-it {
+		display: flex;
+	}
+
+	.find-contacts {
+		flex-direction: row-reverse;
+	}
+
+	.be-active-img, .find-contact-img, .work-it-img {
+		width: 50%;
+	}
+
+	.others-img {
+		width: 100%;
+	}
+
+	.others-container {
+		width: 50%;
+		padding-top: 6%;
+		padding-bottom: 0;
+	}
+
+	.be-active-number-container, .work-it-number-container {
+		width: 166px;
+		height: 150px;
+		top: 8%;
+		left: -88px;
+	}
+
+	.find-contacts-number-container {
+		width: 166px;
+		height: 150px;
+		top: 8%;
+		left: auto;
+		right: -88px; 
+	}
+
+	.others-heading-number {
+		font-size: 24px;
+	}
+
+	.others-heading-number::after {
+		width: 27px;
+		height: 5px;
+		border-radius: 3px;
+	}
+
+	.others-heading {
+		font-size: 65px;
+		padding-left: 18%;
+	}
+
+	.find-contacts-others-heading {
+		padding-left: 10%;
+		padding-right: 20%;
+	}
+
+	.others-content-text {
+		font-size: 24px;
+		margin-top: 3%;
+		padding-left: 18%;
+		padding-right: 0;
+	}
+
+	.find-contacts-others-content-text {
+		padding-left: 10%;
+		padding-right: 20%;
 	}
 
 @media screen and (min-width: 1661px) {
@@ -772,5 +841,56 @@ body {
 		position: absolute;
 		right: 5%;
 		top: 20px;
+	}
+
+	.others-container {
+		width: 50%;
+		padding-top: 10%;
+		padding-bottom: 0;
+	}
+
+	.be-active-number-container, .work-it-number-container {
+		width: 166px;
+		height: 150px;
+		top: 23%;
+		left: -88px;
+	}
+
+	.find-contacts-number-container {
+		width: 166px;
+		height: 150px;
+		top: 23%;
+		left: auto;
+		right: -88px; 
+	}
+
+	.others-heading-number {
+		font-size: 24px;
+	}
+
+	.others-heading-number::after {
+		width: 27px;
+		height: 5px;
+		border-radius: 3px;
+	}
+
+	.others-heading {
+		font-size: 80px;
+		padding-left: 130px;
+	}
+
+	.find-contacts-others-heading {
+		padding-right: 10%;
+	}
+
+	.others-content-text {
+		font-size: 24px;
+		margin-top: 10%;
+		padding-left: 130px;
+		padding-right: 10%;
+	}
+
+	.find-contacts-others-content-text {
+		padding-right: 10%;
 	}
 }
