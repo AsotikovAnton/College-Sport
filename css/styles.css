@@ -79,11 +79,13 @@ body {
 	text-transform: uppercase;
 	margin-top: 130px;
 	margin-bottom: 85px;
+	line-height: 1.2em;
 }
 
 .heading-end {
 	display: block;
 	margin-left: 44px;
+	margin-top: 15px;
 }
 
 .header-social-links {
@@ -368,6 +370,12 @@ body {
     flex-direction: column;
 }
 
+.footer-icon-and-heading {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 75px;
+}
+
 .footer-icon {
 	width: 70px;
 	height: 70px;
@@ -390,7 +398,6 @@ body {
 	font-size: 32px;
 	text-transform: uppercase;
 	margin-top: 50px;
-	margin-bottom: 75px;
 	text-align: center;
 }
 
@@ -426,10 +433,12 @@ body {
 		padding-left: 11%;
 		margin-top: 165px;
 		margin-bottom: 300px;
+		line-height: 1.2em;
 	}
 
 	.heading-end {
 		margin-left: 12%;
+		margin-top: 0;
 	}
 
 	.header-social-links {
@@ -578,6 +587,10 @@ body {
 		padding: 125px 0 20px;
 	}
 
+	.footer-icon-and-heading {
+		margin-bottom: 275px;
+	}
+
 	.footer-icon {
 		width: 130px;
 		height: 130px;
@@ -592,7 +605,6 @@ body {
 	.footer-heading {
 		font-size: 80px;
 		margin-top: 60px;
-		margin-bottom: 275px;
 	}
 
 	.footer-heading-end {
@@ -628,11 +640,12 @@ body {
 		font-size: 70px;
 		margin-top: 275px;
 		margin-bottom: 210px;
+		line-height: 1em;
 	}
 
 	.heading-end {
 		margin-left: 27%;
-		margin-top: -25px;
+		margin-top: 0;
 	}
 
 	.header-social-links {
@@ -768,7 +781,7 @@ body {
 	.others-container {
 		width: 50%;
 		padding-top: 6%;
-		padding-bottom: 0;
+		padding-bottom: 2%;
 	}
 
 	.be-active-number-container, .work-it-number-container {
@@ -818,6 +831,53 @@ body {
 		padding-right: 20%;
 	}
 
+	.footer {
+		background-image: url(../images/game_1280.jpg);
+	}
+
+	.footer-container {
+		padding: 230px 0 50px;
+	}
+
+	.footer-icon-and-heading {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 150px;
+	}
+
+	.footer-icon {
+		width: 130px;
+		height: 130px;
+		border-radius: 30px;
+		margin-right: 1.8%;
+	}
+
+	.footer-icon-svg {
+		width: 105px;
+		height: 90px;
+	}
+
+	.footer-heading {
+		font-size: 80px;
+		margin-top: 0;
+		text-align: left;
+		margin-top: -15px;
+	}
+
+	.footer-heading-end {
+		font-size: 30px;
+		margin-top: -13px;
+	}
+
+	.footer-social-links {
+		flex-direction: row;
+		font-size: 14px;
+		margin-bottom: 260px;
+	}
+}
+
 @media screen and (min-width: 1661px) {
 	.header {
 		background-image: url(../images/football_1920.jpg);
@@ -825,6 +885,7 @@ body {
 
 	.heading {
 		font-size: 90px;
+		line-height: 1em;
 	}
 
 	.footballer-img {
@@ -846,7 +907,7 @@ body {
 	.others-container {
 		width: 50%;
 		padding-top: 10%;
-		padding-bottom: 0;
+		padding-bottom: 2%;
 	}
 
 	.be-active-number-container, .work-it-number-container {
@@ -892,5 +953,9 @@ body {
 
 	.find-contacts-others-content-text {
 		padding-right: 10%;
+	}
+
+	.footer {
+		background-image: url(../images/game_1920.jpg);
 	}
 }
